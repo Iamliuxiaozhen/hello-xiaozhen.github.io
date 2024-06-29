@@ -1,0 +1,15 @@
+# 编辑器上传图片，并把他转换为URL链接？
+*本教程所包含的内容无需自定义控件
+本文为原作者直接从CSDN搬运，所有图片会有CSDN的水印。
+本文受著作权法保护
+<hr> 
+<p>准备工作：<br> 1.1个未被盗号且未被封号的编程猫账号<br> 2.一个程序员<br> 3. 一个可以访问网站的设备<br> 4.请确认你的图片合法合规<br> 我需要明确的告诉你，本操作不可逆</p> 
+<p>登录CoCo官网，新建一个作品，</p> 
+<ol><li>我们在基础类型的多媒体分类这里找到这个控件：<br> <img src="https://img-blog.csdnimg.cn/direct/6fb0ced5c36b43cebdae6b245f5c0344.png#pic_center" alt="这是一个照相机"><br> 将他拖拽至舞台，然后你就会在则边栏看见这个东西：<br> <img src="https://img-blog.csdnimg.cn/direct/69e22d410fab4f4b81c2dfd73906df2d.png#pic_center" alt="侧边栏的照相机"><br> 然后我们就点卡这个控件，我们会看到这几个积木：<br> <img src="https://img-blog.csdnimg.cn/direct/f9dcebea3f824762bf793a87c892e459.png#pic_center" alt="积木"><br> 看到这里，你不会以为上传后 就是上传的<br> <img src="https://img-blog.csdnimg.cn/direct/d9dbe3d6580442c792daba0a3e75a241.png#pic_center" alt="在这里插入图片描述"></li></ol> 
+<p>后图片的链接吧。来请在评论区打错【小圳，我上当了】。所以，这只是一个blob链接，这不上资源路径，所以我们需要CoCo告诉我们的完整路径。所以，我们需要加一个基础控件：<br> <img src="https://img-blog.csdnimg.cn/direct/f8ce2358e9714bf188e42582c1f17d07.png#pic_center" alt="数据库"><br> 将他拖拽至舞台以导入进来，然后，你就会在<a href="https://so.csdn.net/so/search?q=%E4%BE%A7%E8%BE%B9%E6%A0%8F&amp;spm=1001.2101.3001.7020" target="_blank" class="hl hl-1" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=%E4%BE%A7%E8%BE%B9%E6%A0%8F&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;侧边栏\&quot;}&quot;}" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.7020&quot;,&quot;dest&quot;:&quot;https://so.csdn.net/so/search?q=%E4%BE%A7%E8%BE%B9%E6%A0%8F&amp;spm=1001.2101.3001.7020&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;侧边栏\&quot;}&quot;}" data-tit="侧边栏" data-pretit="侧边栏">侧边栏</a>看见这个：<br> <img src="https://img-blog.csdnimg.cn/direct/1a8b9f56a5a34dfa8fefe131003ea47b.png#pic_center" alt="数据库"><br> 我们把他打开，我们看到这些东西：<br> <img src="https://img-blog.csdnimg.cn/direct/ca3b6d1866104e13b483b516dbb6bc69.png#pic_center" alt="在这里插入图片描述"></p> 
+<p>然后我们创建一个健，重命名未【picture】<br> <img src="https://img-blog.csdnimg.cn/direct/74108fb4770f405ea1520c04f194c1dc.png#pic_center" alt="新建"><br> 然后，我们点击确定，然后我们可以把 <img src="https://img-blog.csdnimg.cn/direct/d9dbe3d6580442c792daba0a3e75a241.png#pic_center" alt="在这里插入图片描述">放到<img src="https://img-blog.csdnimg.cn/direct/0e0305ed920b4c2f90528101576cee10.png#pic_center" alt="在这里插入图片描述"><br> 里面，然后我们再通过这个积木读取<br> <img src="https://img-blog.csdnimg.cn/direct/654ef275a9b844f08b25895e07e71317.png#pic_center" alt="在这里插入图片描述"></p> 
+<p>这里面返回的内容就是他的URL真实链接了。<br> 但是，可能在CoCo打包后，上传服务器会有延时，导致输出快了，这时，我们需要这样字写：<img src="https://img-blog.csdnimg.cn/direct/88e0aebb20f743a2a1c925617e28a1c2.png#pic_center" alt="完整代码"></p>
+                </div><div><div></div></div>
+                <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/markdown_views-f23dff6052.css" rel="stylesheet">
+                <link href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/style-c216769e99.css" rel="stylesheet">
+        </div>
